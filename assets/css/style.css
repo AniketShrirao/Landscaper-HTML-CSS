@@ -107,7 +107,9 @@ li {
   Header styling starts here
 =================================*/
 
-
+header .wrapper {
+  display: flex;
+}
 
 
 
