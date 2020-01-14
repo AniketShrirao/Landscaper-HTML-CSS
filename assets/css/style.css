@@ -200,12 +200,75 @@ nav a {
   welcome styling starts here
 =================================*/ 
 
+.services {
+  display: flex;
+}
+
+
 .landscape-welcome h2 {
   margin: 0 0 20px 0;
   font-weight: 600;
   font-size: 36px;
   color: #333;
+}
+
+.landscape-welcome h2::after {
+  content: '';
+  width: 5%;
+  height: 3px;
+  background: #6aaf08;
+  position: absolute;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.landscape-welcome span {
+  color: #6eab52;
   text-transform: capitalize;
+}
+
+.landscape-welcome p {
+  margin: 20px 0 10px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+}
+
+.landscape-welcome h2 + p {
+  margin-top: 64px;
+}
+
+.landscape-welcome a {
+  margin-top: 40px;
+  color: #fff;
+  background-color: #5f9d07;  
+}
+
+.care {
+  width: 60%;
+}
+
+.care h3 {
+  padding: 24px 0;
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.care p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.care:first-of-type {
+  margin:0 23px 0 14px;
+}
+
+.care:last-of-type {
+  margin-left: 14px;
 }
 
 
