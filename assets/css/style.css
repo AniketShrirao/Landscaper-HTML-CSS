@@ -151,16 +151,45 @@ nav a {
 
 .banner {
   height: 766px;
+  background: url('https://via.placeholder.com/1350x766');
 }
 
 .banner .wrapper {
   display: flex;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
+.banner h2 {
+  margin: 325px 0px 20px 0px;
+  letter-spacing: -1px;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.banner p {
+  width: 50%;
+  margin-bottom: 38px;
+  font-size: 24px;
+}
+
+.banner a {
+  padding:20px 20px 15px;
+  margin: 0;
+  border-radius: 6px;
+  color: #fff;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #6aaf08;
+  font-size: 17px;
+  font-weight: 400;
+  transition: all 0.3s;  
+}
 
 
 
