@@ -340,7 +340,7 @@ nav a {
 =================================*/ 
 
 .gallery {
-  padding: 125px 0; 
+  padding: 100px 0 114px; 
   text-align: center;  
 }
 
@@ -349,7 +349,7 @@ nav a {
   margin: 0 0 20px 0;
   font-weight: 600;
   font-size: 36px;  
-  color: #000;
+  color: #333;
   position: relative;
 }
 
@@ -366,12 +366,55 @@ nav a {
   top: 91.5%;
 }
 
+.gallery p {
+  margin-top: 47px;
+  color: #666;
+  font-size: 18px;
+}
+
+.gallery-breadcrumbs {
+  margin: 64px 0 55px;
+}
+
+.gallery-breadcrumbs a {
+  margin: 0 9.8px;
+  padding: 11px 14px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.gallery-breadcrumbs a {
+  background: #e5e5e5;
+  color: #666;
+  border-radius: 4px;
+}
 
 
+.gallery-breadcrumbs .active {
+  background: #69ad31;
+  color: rgba(255,255,255,0.9);
+}
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects figure {padding:15.5px 14.5px;}
+
+.projects {width: 101%;}
 
  /*=================================
   gallery styling ends here
+=================================*/ 
+
+/*=================================
+  testimonials styling starts here
+=================================*/ 
+
+
+ /*=================================
+  Testimonials styling ends here
 =================================*/ 
 
 /*=================================
