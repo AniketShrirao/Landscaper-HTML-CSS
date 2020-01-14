@@ -500,8 +500,37 @@ blockquote span {
   contact us styling starts here
 =================================*/ 
 
+.contactus { 
+  padding: 106px 0 98px;
+  text-align: center;
+}
 
+.contactus h2 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 36px;  
+  color: #333;
+  position: relative;
+}
 
+.contactus h2::before {
+  content: '';
+  width: 6%;
+  height: 3px;
+  background: #69ad31;
+  position: absolute;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  left: 47%;
+  top: 91.5%;
+}
+
+.contactus p {
+  margin-top: 47px;
+  color: #666;
+  font-size: 18px;
+}
 
 
 
