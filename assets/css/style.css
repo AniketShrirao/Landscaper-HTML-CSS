@@ -511,6 +511,7 @@ blockquote span {
   font-size: 36px;  
   color: #333;
   position: relative;
+  text-transform: capitalize;
 }
 
 .contactus h2::before {
@@ -527,12 +528,104 @@ blockquote span {
 }
 
 .contactus p {
-  margin-top: 47px;
+  margin: 47px 0 94px;
   color: #666;
   font-size: 18px;
 }
 
+.contact {
+  display: flex;
+  margin-bottom: 90px;
+  justify-content: center;
+}
 
+.contact h3 {
+  position: relative;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.contact h3::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #C3DEAD;
+  position: absolute;
+  display: block;
+  margin-top: 12px;
+  left: 0%;
+  top: 15px;
+}
+
+.hours h3::before,
+.info h3::before {
+  width: 50%;
+  left: 22%;
+} 
+
+.contact > div {
+  margin: 0 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact p, .contact span {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.contact a {color: #666;}
+
+.contact a:hover {color: #333;}
+
+.hours p {width: 100%;}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 62%;
+  display: flex;
+  justify-content: center;
+}
+.form-control > .form-group{
+  flex: 0.5;
+  margin: 0 14px;
+}
+
+.form-control input {
+  height: 40px;
+  width: 100%;
+}
+
+.message .form-group:last-of-type {
+  margin-bottom: 16px;
+  width: 59.5%;
+}
+
+
+textarea {
+  width: 100%;
+  height: 130px;
+}
+
+.message h3 {margin-bottom: 40px;}
+
+.message a {
+  padding: 14px 18px;
+  background:#69ad31;
+  color: rgba(255,255,255,0.9);
+  border-radius: 4px;
+}
 
 
  /*=================================
