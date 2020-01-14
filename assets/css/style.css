@@ -20,6 +20,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: 'Open Sans',"Helvetica Neue", sans-serif;
   vertical-align: baseline;
 }
 
@@ -194,7 +195,7 @@ nav a {
 
 .welcome {padding: 118px 0 125px;}
 
-.services {display: flex;}
+.landscape {display: flex;}
 
 
 .landscape-welcome h2 {
@@ -263,11 +264,72 @@ nav a {
   services styling starts here
 =================================*/ 
 
-.services {background: #69ad31;}
+.services {
+  padding: 125px 0; 
+  background: #69ad31;
+  text-align: center;
+}
+
+.services h2 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 36px;  
+  color: #fff;
+  position: relative;
+}
+
+.services h2::before {
+  content: '';
+  width: 6%;
+  height: 3px;
+  background: #C3DEAD;
+  position: absolute;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  left: 47%;
+  top: 91.5%;
+}
+
+.services h2 + p {
+  margin: 47px 0 90px;
+  color: rgba(255,255,255,0.9);
+  font-size: 18px;
+}
+
+.service {display: flex;}
+
+.serve {
+  display: flex;
+  flex-direction: column;
+}
+
+.serve figure{margin-bottom: 26px;}
+
+.serve h3 {
+  margin-bottom:16px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;  
+}
+
+.serve p {
+  width: 84%;
+  margin-bottom: 24px;
+  align-self: center;
+  justify-content: center;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+}
 
 
-
-
+.serve img {
+  width: 72%;
+  border-radius: 50%;
+  border: 10px solid #78b546;
+}
 
  /*=================================
   services styling ends here
