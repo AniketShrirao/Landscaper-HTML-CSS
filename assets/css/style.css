@@ -304,10 +304,10 @@ nav a {
   flex-direction: column;
 }
 
-.serve figure{margin-bottom: 26px;}
+.serve figure{margin-bottom: 18px;}
 
 .serve h3 {
-  margin-bottom:16px;
+  margin-bottom:9px;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
@@ -335,6 +335,44 @@ nav a {
   services styling ends here
 =================================*/ 
 
+/*=================================
+  gallery styling starts here
+=================================*/ 
+
+.gallery {
+  padding: 125px 0; 
+  text-align: center;  
+}
+
+
+.gallery h2 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 36px;  
+  color: #000;
+  position: relative;
+}
+
+.gallery h2::before {
+  content: '';
+  width: 6%;
+  height: 3px;
+  background: #69ad31;
+  position: absolute;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  left: 47%;
+  top: 91.5%;
+}
+
+
+
+
+
+ /*=================================
+  gallery styling ends here
+=================================*/ 
 
 /*=================================
   main styling ends here
