@@ -414,8 +414,15 @@ nav a {
 
 .testimonials {
   padding: 125px 0;
-  background: url('https://via.placeholder.com/1351x525');
+  background: url('https://via.placeholder.com/1351x525') no-repeat;
+  background-size:cover;
+  background-position:center;
   text-align: center;
+}
+
+.testimonials .wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonials h2 {
@@ -439,9 +446,68 @@ nav a {
   top: 91.5%;
 }
 
+.testimons {
+  width: 80%;
+  margin-top:78px;
+  align-self: center;
+}
+
+blockquote p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+blockquote span {
+  margin: 20px 0 28px;
+  display: inline-block;
+  color: #fff;
+}
+
+.dots {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.dot {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 4px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotactive, .dot:hover {
+  background-color: #fff;
+}
+
+.testimonials blockquote:not(:first-of-type) {
+  display: none;
+}
+
 
  /*=================================
   Testimonials styling ends here
+=================================*/ 
+
+/*=================================
+  contact us styling starts here
+=================================*/ 
+
+
+
+
+
+
+
+ /*=================================
+  contact us styling ends here
 =================================*/ 
 
 /*=================================
