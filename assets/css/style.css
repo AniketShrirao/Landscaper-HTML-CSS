@@ -107,13 +107,9 @@ li {
   Header styling starts here
 =================================*/
 
-header {
-  background:#363636;
-}
+header {background:#363636;}
 
-header .wrapper {
-  display: flex;
-}
+header .wrapper {display: flex;}
 
 .logo {
   padding: 35px 0px 25px 0px;
@@ -125,9 +121,7 @@ nav {
   flex: 1.1;
 }
 
-nav li {
-  padding: 0px 19px;
-}
+nav li { padding: 0px 19px;}
 
 nav a {
   color: #fff;
@@ -149,10 +143,7 @@ nav a {
   banner styling starts here
 =================================*/
 
-.banner {
-  height: 766px;
-  background: url('https://via.placeholder.com/1350x766');
-}
+.banner {background: url('https://via.placeholder.com/1350x766');}
 
 .banner .wrapper {
   display: flex;
@@ -177,10 +168,11 @@ nav a {
   font-size: 24px;
 }
 
+.banner a {margin-bottom: 200px;}
+
 .banner a ,
 .landscape-welcome a{
   padding:20px 20px 15px;
-  margin: 0;
   border-radius: 6px;
   color: #fff;
   box-sizing: border-box;
@@ -200,9 +192,9 @@ nav a {
   welcome styling starts here
 =================================*/ 
 
-.services {
-  display: flex;
-}
+.welcome {padding: 118px 0 125px;}
+
+.services {display: flex;}
 
 
 .landscape-welcome h2 {
@@ -236,9 +228,7 @@ nav a {
   color: #666;
 }
 
-.landscape-welcome h2 + p {
-  margin-top: 64px;
-}
+.landscape-welcome h2 + p {margin-top: 64px;}
 
 .landscape-welcome a {
   margin-top: 40px;
@@ -246,9 +236,7 @@ nav a {
   background-color: #5f9d07;  
 }
 
-.care {
-  width: 60%;
-}
+.care {width: 60%;}
 
 .care h3 {
   padding: 24px 0;
@@ -263,20 +251,27 @@ nav a {
   line-height: 1.5;
 }
 
-.care:first-of-type {
-  margin:0 23px 0 14px;
-}
+.care:first-of-type {margin:0 23px 0 14px;}
 
-.care:last-of-type {
-  margin-left: 14px;
-}
-
+.care:last-of-type {margin-left: 14px;}
 
  /*=================================
   welcome styling ends here
 =================================*/
 
+/*=================================
+  services styling starts here
+=================================*/ 
 
+.services {background: #69ad31;}
+
+
+
+
+
+ /*=================================
+  services styling ends here
+=================================*/ 
 
 
 /*=================================
