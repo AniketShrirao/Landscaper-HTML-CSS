@@ -107,12 +107,35 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  background:#363636;
+}
+
 header .wrapper {
   display: flex;
 }
 
+.logo {
+  padding: 35px 0px 25px 0px;
+  flex: 1.02;
+}
 
+nav {
+  padding: 40px 0px 28px 0px;
+  flex: 1.1;
+}
 
+nav li {
+  padding: 0px 19px;
+}
+
+nav a {
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  font-size: 13.8px;
+  text-transform: uppercase;
+}
 
 /*=================================
   Header styling ends here
