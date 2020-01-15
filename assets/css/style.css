@@ -640,7 +640,16 @@ textarea {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 34px 0 40px;
+  background: #363636;
+  text-align: center;
+}
 
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
