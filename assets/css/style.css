@@ -129,7 +129,12 @@ nav a {
   line-height: 1.5;
   letter-spacing: 1.2px;
   font-size: 13.8px;
+  font-weight: 400;
   text-transform: uppercase;
+}
+
+nav a:hover , .active {
+  color: #69ad31;
 }
 
 /*=================================
@@ -185,6 +190,12 @@ nav a {
   transition: all 0.3s;  
 }
 
+.landscape-welcome a:hover ,
+.banner a:hover{
+  color: #666;
+  background-color: #69ad31;  
+}
+
 /*=================================
   banner styling ends here
 =================================*/
@@ -197,6 +208,7 @@ nav a {
 
 .landscape {display: flex;}
 
+.landscape-welcome {padding-right: 36px;}
 
 .landscape-welcome h2 {
   margin: 0 0 20px 0;
@@ -212,8 +224,7 @@ nav a {
   background: #6aaf08;
   position: absolute;
   display: block;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 18px;
 }
 
 .landscape-welcome span {
@@ -222,7 +233,7 @@ nav a {
 }
 
 .landscape-welcome p {
-  margin: 20px 0 10px;
+  margin: 20px 0 10px 0;
   line-height: 24px;
   font-size: 15px;
   font-weight: 400;
@@ -232,15 +243,16 @@ nav a {
 .landscape-welcome h2 + p {margin-top: 64px;}
 
 .landscape-welcome a {
+  padding: 18px;
   margin-top: 40px;
   color: #fff;
-  background-color: #5f9d07;  
+  background-color: #69ad31;  
 }
 
 .care {width: 60%;}
 
 .care h3 {
-  padding: 24px 0;
+  padding: 22px 0;
   color: #333;
   font-size: 22px;
   font-weight: 400;
@@ -252,7 +264,7 @@ nav a {
   line-height: 1.5;
 }
 
-.care:first-of-type {margin:0 23px 0 14px;}
+.care:first-of-type {margin:0 17px 0 0px;}
 
 .care:last-of-type {margin-left: 14px;}
 
@@ -265,7 +277,7 @@ nav a {
 =================================*/ 
 
 .services {
-  padding: 125px 0; 
+  padding: 121px 0 127px; 
   background: #69ad31;
   text-align: center;
 }
@@ -288,11 +300,11 @@ nav a {
   margin-top: 24px;
   margin-bottom: 24px;
   left: 47%;
-  top: 91.5%;
+  top: 84.5%;
 }
 
 .services h2 + p {
-  margin: 47px 0 90px;
+  margin: 43px 0 90px;
   color: rgba(255,255,255,0.9);
   font-size: 18px;
 }
@@ -304,10 +316,10 @@ nav a {
   flex-direction: column;
 }
 
-.serve figure{margin-bottom: 18px;}
+.serve figure{margin-bottom: 26px;}
 
 .serve h3 {
-  margin-bottom:9px;
+  margin-bottom:15px;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
@@ -363,32 +375,37 @@ nav a {
   margin-top: 24px;
   margin-bottom: 24px;
   left: 47%;
-  top: 91.5%;
+  top: 81.5%;
 }
 
 .gallery p {
-  margin-top: 47px;
+  margin-top: 44px;
   color: #666;
   font-size: 18px;
 }
 
-.gallery-breadcrumbs {margin: 64px 0 55px;}
+.gallery-breadcrumbs {margin: 64px 0 41px;}
 
 .gallery-breadcrumbs a {
   margin: 0 9.8px;
   padding: 11px 14px;
   box-sizing: border-box;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
-.gallery-breadcrumbs a {
+.bread-active{
+  background: #69ad31;
+  color: rgba(255,255,255,0.9);
+}
+
+.gallery-breadcrumbs a:not(:first-child) {
   background: #e5e5e5;
   color: #666;
   border-radius: 4px;
 }
 
-
-.gallery-breadcrumbs .active {
+.gallery-breadcrumbs a:not(:first-child):hover {
   background: #69ad31;
   color: rgba(255,255,255,0.9);
 }
@@ -478,10 +495,13 @@ blockquote span {
   background: rgba(255,255,255,0.4);
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.3s ease;
 }
 
-.dotactive, .dot:hover {background-color: #fff;}
+.Dots li:first-child a { background: #fff;}
+
+
+.dot:hover {background-color: rgba(0,0,0,0.3);}
 
 .testimonials blockquote:not(:first-of-type) {display: none;}
 
@@ -497,6 +517,7 @@ blockquote span {
 .contactus { 
   padding: 106px 0 98px;
   text-align: center;
+  background: #f6f6f6;
 }
 
 .contactus h2 {
@@ -543,7 +564,7 @@ blockquote span {
   content: '';
   width: 100%;
   height: 3px;
-  background: #C3DEAD;
+  background: #dcdcdc;
   position: absolute;
   display: block;
   margin-top: 12px;
@@ -574,11 +595,11 @@ blockquote span {
 
 .contact a {color: #666;}
 
-.contact a:hover {color: #333;}
+.contact a:hover {color:rgba(0,0,0,0.3)}
 
 .hours p {width: 100%;}
 
-.message {
+form {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -606,7 +627,7 @@ blockquote span {
   text-transform: capitalize;
 }
 
-.message .form-group:last-of-type {
+form .form-group:last-of-type {
   margin-bottom: 16px;
   width: 61.2%;
 }
@@ -623,17 +644,23 @@ textarea {
   text-transform: capitalize;
 }
 
-.message h3 {margin-bottom: 40px;}
+form h3 {margin-bottom: 40px;}
 
-.message a {
+.send {
   margin-top: 15px;
-  padding: 18px 18px;
+  padding: 18px;
   background:#69ad31;
   letter-spacing: 1.5px;
+  border-radius: 4px;
   color: rgba(255,255,255,0.9);
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
+.send:hover {
+  background: #78b546;
+  color: #666;
+}
 
  /*=================================
   contact us styling ends here
@@ -667,6 +694,7 @@ footer .wrapper {
   border-radius: 100%;
   background: #464646;
   color: #69ad31;
+  transition: all 0.3s;
 }
 
 .social a:first-of-type {
@@ -683,7 +711,10 @@ footer p {
   line-height: 1.6;
 }
 
-footer a {color:rgba(255,255,255,0.4);}
+footer a {
+  transition: all 0.3s;
+  color:rgba(255,255,255,0.4);
+}
 
 footer a:hover {color: rgba(255,255,255,0.9);}
 
