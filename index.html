@@ -35,7 +35,7 @@
         <nav>
           <ul>
             <li>
-              <a href="#FIXME" title="About">about</a>
+              <a href="#FIXME" class="active" title="About">about</a>
             </li>
             <li>
               <a href="#FIXME" title="Services">services</a>
@@ -149,7 +149,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor.</p>
           <div class="gallery-breadcrumbs">
-            <a href="#FIXME" title="All">all</a>
+            <a href="#FIXME" class="bread-active" title="All">all</a>
             <a href="#FIXME" title="Lawn Care">lawn care</a>
             <a href="#FIXME" title="Garden Care">garden care</a>
             <a href="#FIXME" title="Planting">planting</a>
@@ -189,32 +189,40 @@
 
       <!--testimonials section start-->
       <section class="testimonials"> 
-        <div class="wrapper">
+        < class="wrapper">
           <h2>Testimonials</h2>
           <div class="testimons">
             <blockquote>
-            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolore repudiandae qui corporis rem consectetur maiores dolor placeat illo nostrum."</p>
-            <span>-John Doe, Parker country,tx</span>
+            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolore repudiandae qui corporis rem consectetur maiores dolor placeat illo nostrum. Lorem ipsum dolor sit amet. "</p>
+            <span>-John DOE, Parker Country,TX</span>
             </blockquote>
             <blockquote>
               <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolore repudiandae qui corporis rem consectetur maiores dolor placeat illo nostrum."</p>
-              <span>-John Doe, Parker country,tx</span>
+              <span>-John DOE, Parker Country,TX</span>
             </blockquote>
             <blockquote>
               <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolore repudiandae qui corporis rem consectetur maiores dolor placeat illo nostrum."</p>
-              <span>-John Doe, Parker country,tx</span>
+              <span>-John DOE, Parker Country,TX</span>
             </blockquote>
             <blockquote>
               <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolore repudiandae qui corporis rem consectetur maiores dolor placeat illo nostrum."</p>
-              <span>-John Doe, Parker country,tx</span>
+              <span>-John DOE, Parker Country,TX</span>
             </blockquote>
           </div>
-          <div class="Dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span> 
-          </div> 
+          <ul class="Dots">
+            <li>
+              <a class="dot" href="#FIXME" title="First Slide" ></a> 
+            </li>
+            <li>
+              <a class="dot" href="#FIXME" title="Second Slide" ></a> 
+            </li>
+            <li>
+              <a class="dot" href="#FIXME" title="Third Slide" ></a> 
+            </li>
+            <li>
+              <a class="dot" href="#FIXME" title="Fourth Slide" ></a> 
+            </li>
+          </ul> 
         </div>
       </section>
       <!--testimonials section end-->
@@ -227,27 +235,29 @@
           <div class="contact">
             <div class="address">
               <h3>Address</h3>
-              <p>710-B, Advant Navis Business Park, 
-              Sector-142, Noida Uttar Pradesh</p>
+              <p>4321 California st,<br> 
+              San Francisco, CA 12345</p>
             </div>
             <div class="hours">
               <h3>Working Hours</h3>
-              <p>Monday-Saturday:07.00 - 18.00
-                Sunday:Closed</p>
+              <span>Monday-Saturday: 07:00 - 18:00</span>
+              <span>Sunday: CLOSED</span>
             </div>
             <div class="info">
               <h3>Contact Info</h3>
-              <p>Phone number:<a href="tel:+1123456123" title="+1123456123">+1 123 456 123</a>
-                Email:<a href="mailto:info@company.com" title="info@company.com">info@company.com</a></p>
+              <span>Phone: <a href="tel:+1123456124" title="+1123456124">+1 123 456 124</a></span>
+              <span>Email: <a href="mailto:info@company.com" title="info@company.com">info@company.com</a></span>
             </div>
           </div>
-          <form class="message">
+          <form>
             <h3>leave us a message</h3>
-            <div class="form-group">
-              <input type="text" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Email">
+            <div class="form-control">
+              <div class="form-group">
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email">
+              </div>
             </div>
             <div class="form-group">
               <textarea cols="30" rows="10" placeholder="Message"></textarea>
@@ -265,11 +275,11 @@
     <footer> 
       <div class="wrapper">
         <div class="social">
-          <a href="#FIXME" title="Facebook" class="fab fa-facebook-f"></a>
+          <a href="#FIXME" title="Facebook" class="fa fa-facebook" aria-hidden="true"></a>
           <a href="#FIXME" title="Twitter" class="fab fa-twitter"></a>
           <a href="#FIXME" title="Google Plus" class="fab fa-google-plus-g"></a>
         </div>
-        <p>&copy; landscaper. Designed by TemplateWire</p>
+        <p>&copy; 2020 Landscaper. Designed by <a href="#FIXME"> TemplateWire</a></p>
       </div>     
     </footer>
     <!--footer section end-->
